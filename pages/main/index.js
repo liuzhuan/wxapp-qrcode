@@ -18,7 +18,8 @@ Page({
     var size = {};
     try {
       var res = wx.getSystemInfoSync();
-      var scale = 750 / 686;//不同屏幕下canvas的适配比例；设计稿是750宽
+      // 这一步其实是将 rpx 转换为 px，因为 canvas 绘图的单位只是 px
+      var scale = 750 / 686;
       var width = res.windowWidth / scale;
       var height = width;
       size.w = width;

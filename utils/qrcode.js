@@ -761,7 +761,7 @@
 
       var frame = that.getFrame(str),
         // 组件中生成qrcode需要绑定this 
-        ctx = wx.createCanvasContext(canvas,$this),
+        ctx = wx.createCanvasContext(canvas, $this),
         px = Math.round(size / (width + 8));
       var roundedSize = px * (width + 8),
         offset = Math.floor((size - roundedSize) / 2);
