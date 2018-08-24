@@ -691,10 +691,7 @@
       }
     return qrframe;
   }
-
-
-
-
+  
   var _canvas = null;
 
   var api = {
@@ -769,7 +766,6 @@
       var roundedSize = px * (width + 8),
         offset = Math.floor((size - roundedSize) / 2);
       size = roundedSize;
-      //ctx.clearRect(0, 0, cavW, cavW);
       ctx.setFillStyle('#ffffff')
       ctx.fillRect(0, 0, cavW, cavW);
       ctx.setFillStyle('#000000');
@@ -783,7 +779,5 @@
       ctx.draw();
     }
   }
-  module.exports = { api }
-  // exports.draw = api;
-
+  module.exports = { api };
 })();
